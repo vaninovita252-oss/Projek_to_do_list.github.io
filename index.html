@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas Kuliah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h3>Input Tugas</h3>
+            <div class="input-group">
+                <label>Mata Kuliah</label>
+                <input type="text" id="course-input">
+                
+                <label>Deskripsi Tugas</label>
+                <input type="text" id="desc-input">
+                
+                <button onclick="addTask()">Tambah ke Tabel</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Daftar Tugas</h3>
+            <div class="table-wrapper">
+                <table id="todo-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">No.</th>
+                            <th>Mata Kuliah</th>
+                            <th>Deskripsi Tugas</th>
+                            <th style="width: 100px;">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todo-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
